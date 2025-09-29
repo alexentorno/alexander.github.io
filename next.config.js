@@ -1,6 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+    reactStrictMode: true,
+    output: 'export',
+    trailingSlash: true,
+    images: {
+        unoptimized: true
+    },
+    basePath: process.env.NODE_ENV === 'production' ? '/react-portfolio' : '',
+    assetPrefix: process.env.NODE_ENV === 'production' ? '/react-portfolio/' : '',
 }
 
 module.exports = nextConfig
