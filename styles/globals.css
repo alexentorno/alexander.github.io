@@ -59,11 +59,6 @@ body {
   border-radius: inherit;
 }
 
-/* 
-* Prevents issues when the parent creates a 
-* stacking context. (For example, using the transform
-* property )
-*/
 .gradient-shadow:hover::after {
   content: "";
   z-index: -1;

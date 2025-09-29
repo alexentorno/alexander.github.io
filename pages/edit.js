@@ -42,53 +42,24 @@ const Edit = () => {
         ...data.projects,
         {
           id: uuidv4(),
-          title: "New Project",
+          title: "",
           description: "Web Design & Development",
           imageSrc:
-            "https://images.unsplash.com/photo-1517479149777-5f3b1511d5ad?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTAyfHxwYXN0ZWx8ZW58MHx8MHw%3D&auto=format&fit=crop&w=400&q=60",
+            "",
 
-          url: "http://chetanverma.com/",
+          url: "https://alexentorno.com/",
         },
       ],
     });
   };
 
   const deleteProject = (id) => {
-    const copyProjects = data.projects;
+    let copyProjects = data.projects;
     copyProjects = copyProjects.filter((project) => project.id !== id);
     setData({ ...data, projects: copyProjects });
   };
 
-  // Services Handler
 
-  const editServices = (serviceIndex, editService) => {
-    let copyServices = data.services;
-    copyServices[serviceIndex] = { ...editService };
-    setData({ ...data, services: copyServices });
-  };
-
-  const addService = () => {
-    setData({
-      ...data,
-      services: [
-        ...data.services,
-        {
-          id: uuidv4(),
-          title: "New Service",
-          description:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
-        },
-      ],
-    });
-  };
-
-  const deleteService = (id) => {
-    const copyServices = data.services;
-    copyServices = copyServices.filter((service) => service.id !== id);
-    setData({ ...data, services: copyServices });
-  };
-
-  // Socials Handler
 
   const editSocials = (socialIndex, editSocial) => {
     let copySocials = data.socials;
@@ -111,7 +82,7 @@ const Edit = () => {
   };
 
   const deleteSocials = (id) => {
-    const copySocials = data.socials;
+    let copySocials = data.socials;
     copySocials = copySocials.filter((social) => social.id !== id);
     setData({ ...data, socials: copySocials });
   };
@@ -129,7 +100,7 @@ const Edit = () => {
             id: uuidv4(),
             dates: "Enter Dates",
             type: "Full Time",
-            position: "Frontend Engineer at X",
+            position: "Frontend Engineer",
             bullets: ["Worked on the frontend of a React application"],
           },
         ],
@@ -148,7 +119,7 @@ const Edit = () => {
 
   return (
     <div className={`container mx-auto ${data.showCursor && "cursor-none"}`}>
-      <Header isBlog></Header>
+      <Header></Header>
       {data.showCursor && <Cursor />}
       <div className="mt-10">
         <div className={`${theme === "dark" ? "bg-transparent" : "bg-white"}`}>
@@ -173,12 +144,6 @@ const Edit = () => {
               type={currentTabs === "PROJECTS" && "primary"}
             >
               Projects
-            </Button>
-            <Button
-              onClick={() => setCurrentTabs("SERVICES")}
-              type={currentTabs === "SERVICES" && "primary"}
-            >
-              Services
             </Button>
             <Button
               onClick={() => setCurrentTabs("ABOUT")}
@@ -404,20 +369,7 @@ const Edit = () => {
                       type="text"
                     ></input>
                   </div>
-                  <div className="flex items-center mt-2">
-                    <label className="w-1/5 text-lg opacity-50">url</label>
-                    <input
-                      value={project.url}
-                      onChange={(e) =>
-                        editProjects(index, {
-                          ...project,
-                          url: e.target.value,
-                        })
-                      }
-                      className="w-4/5 ml-10 p-2 rounded-md shadow-lg border-2"
-                      type="text"
-                    ></input>
-                  </div>
+
                   <hr className="my-10"></hr>
                 </div>
               ))}
@@ -430,61 +382,7 @@ const Edit = () => {
             </div>
           </>
         )}
-        {/* SERVICES */}
-        {currentTabs === "SERVICES" && (
-          <>
-            <div className="mt-10">
-              {data.services.map((service, index) => (
-                <div key={service.id}>
-                  <div className="flex items-center justify-between">
-                    <h1 className="text-2xl">{service.title}</h1>
-                    <Button
-                      onClick={() => deleteService(service.id)}
-                      type="primary"
-                    >
-                      Delete
-                    </Button>
-                  </div>
-                  <div className="flex items-center mt-5">
-                    <label className="w-1/5 text-lg opacity-50">Title</label>
-                    <input
-                      value={service.title}
-                      onChange={(e) =>
-                        editServices(index, {
-                          ...service,
-                          title: e.target.value,
-                        })
-                      }
-                      className="w-4/5 ml-10 p-2 rounded-md shadow-lg border-2"
-                      type="text"
-                    ></input>
-                  </div>
-                  <div className="flex items-center mt-5">
-                    <label className="w-1/5 text-lg opacity-50">
-                      Description
-                    </label>
-                    <textarea
-                      value={service.description}
-                      onChange={(e) =>
-                        editServices(index, {
-                          ...service,
-                          description: e.target.value,
-                        })
-                      }
-                      className="w-4/5 ml-10 p-2 rounded-md shadow-lg border-2"
-                    ></textarea>
-                  </div>
-                  <hr className="my-10"></hr>
-                </div>
-              ))}
-            </div>
-            <div className="my-10">
-              <Button onClick={addService} type="primary">
-                Add Service +
-              </Button>
-            </div>
-          </>
-        )}
+
         {currentTabs === "ABOUT" && (
           <div className="mt-10">
             <h1 className="text-2xl">About</h1>

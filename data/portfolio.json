@@ -1,1 +1,65 @@
-{"name":"Chetan","headerTaglineOne":"Hello 👋","headerTaglineTwo":"I'm Chetan Verma - curious","headerTaglineThree":"designer and devloper","headerTaglineFour":" based in New Delhi, India.","showCursor":true,"showBlog":true,"darkMode":true,"showResume":true,"socials":[{"id":"1","title":"Github","link":"https://github.com/chetanverma16"},{"id":"2","title":"LinkedIn","link":"https://www.linkedin.com/in/chetanverma7/"},{"id":"3","title":"Twitter","link":"https://twitter.com/realchetanverma"},{"id":"4","title":"Blog","link":"https://blog.chetanverma.com/"},{"id":"5","title":"Email","link":"mailto:hello@chetanverma.com"}],"projects":[{"id":"1","title":"Project One Test","description":"Web Design","imageSrc":"https://images.unsplash.com/photo-1487837647815-bbc1f30cd0d2?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8Njl8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60","url":"http://chetanverma.com/"},{"id":"2","title":"Project Two","description":"Web Development","imageSrc":"https://images.unsplash.com/photo-1605153864431-a2795a1b2f95?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwyNTY3ODl8fGVufDB8fHw%3D&auto=format&fit=crop&w=400&q=60","url":"http://chetanverma.com/"},{"id":"3","title":"Project Three","description":"Design","imageSrc":"https://images.unsplash.com/photo-1504083898675-c896ecdae86e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjJ8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60","url":"http://chetanverma.com/"},{"id":"4","title":"Project Four","description":"Marketing","imageSrc":"https://images.unsplash.com/photo-1492171983775-a51717616c0d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NjB8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60","url":"http://chetanverma.com/"},{"id":"5","title":"Project Five","description":"Development","imageSrc":"https://images.unsplash.com/photo-1534239143101-1b1c627395c5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NzZ8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60","url":"http://chetanverma.com/"},{"id":"6","title":"Project Six","description":"Design & Development","imageSrc":"https://images.unsplash.com/photo-1517479149777-5f3b1511d5ad?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTAyfHxwYXN0ZWx8ZW58MHx8MHw%3D&auto=format&fit=crop&w=400&q=60","url":"http://chetanverma.com/"}],"services":[{"id":"1","title":"Art Direction","description":"We help with the creation and development of online advertising ideas, with particular focus on their visual appearance."},{"id":"2","title":"Branding","description":"We design key brand elements such as the logo, color scheme, typography, and other design components that makes your brand stand out from competitors."},{"id":"3","title":"Web Design","description":"We build and optimize your online presence.  Website is the digital entry point into your business and a powerful revenue channel."},{"id":"4","title":"3D Design","description":"We combine creative design and technical skills to build striking 3D visualisations that bring your project to life."}],"aboutpara":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.","resume":{"tagline":"👋  I'm a software engineer, product designer.","description":"I have delivered world-class user experiences to millions of people. Well-versed with React, Javascript, and most of the Web frameworks.","experiences":[{"id":"1","dates":"March 2022 - Present","type":"Full Time","position":"Frontend Engineer at X","bullets":"Bullet One, Bullet Two"},{"id":"d495c23b-4f65-479a-9b8a-cfbc1c089725","dates":"July 2020 - March 2022","type":"Full Time","position":"Frontend Engineer at X","bullets":"Worked on the frontend of a React application, Worked on the frontend of a React application"}],"education":{"universityName":"University X","universityDate":"2016-2020","universityPara":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"},"languages":["Javascript","HTML5","CSS","Python","Go"],"frameworks":["React","Typescript","NodeJs"],"others":["Figma","AdobeXD","AWS"]}}
+{"name":"Alexander","headerTaglineOne":"Welcome! 👋","headerTaglineTwo":"I'm Alexander Pekhenko - curious developer","headerTaglineThree":"and former professional athlete","headerTaglineFour":"based in Tallinn, Estonia.","showCursor":true,"showBlog":false,"darkMode":true,"showResume":true,"socials":[{"id":"1","title":"Github","link":"https://github.com/alexentorno"},{"id":"2","title":"LinkedIn","link":"https://www.linkedin.com/in/alexander-pekhenko/"},{"id":"4","title":"Instagram","link":"https://www.instagram.com/ale_xentorno/"},{"id":"5","title":"Email","link":"mailto:alexpekhenko@gmail.com"}],"projects":[{"id":"1","title":"StrokeMaster","description":"Hybrid Mobile App Development","images":["/_projects/stroke_master/smaster1.png","/_projects/stroke_master/smaster2.jpg","/_projects/stroke_master/smaster3.jpg","/_projects/stroke_master/smaster4.jpg"]},{"id":"2","title":"Stroke Sense","description":"Android Mobile App Development","images":["/_projects/stroke_sense/ssense1.jpg","/_projects/stroke_sense/ssense2.jpg","/_projects/stroke_sense/ssense3.jpg","/_projects/stroke_sense/ssense4.jpg"]},{"id":"3","title":"Ticket App","description":"Hybrid Mobile App Development","images":["/_projects/ticket_app/tapp1.jpg","/_projects/ticket_app/tapp2.jpg","/_projects/ticket_app/tapp3.jpg","/_projects/ticket_app/tapp4.jpg","/_projects/ticket_app/tapp5.jpg","/_projects/ticket_app/tapp6.jpg","/_projects/ticket_app/tapp7.jpg"]}],"aboutpara":"I am a young  and ambitious IT specialist with hands-on experience in mobile and web development.\nMy background includes building full-stack applications, designing efficient databases, and developing mobile apps that leverage smartphone sensors.\nI take pride in writing clean, maintainable code and delivering solutions that align with both user needs and business goals. \nContinuous learning and problem-solving drive me forward in every project I take on.\n",
+  "resume": {
+    "tagline": "👋 Mobile & Web Developer",
+    "description": "Motivated developer with a strong 2 full years foundation in mobile and web development, specializing in React, Spring Boot, and Kotlin. Experienced in full-stack application design, CI/CD workflows, and UI/UX principles. Eager to contribute to innovative teams and grow professionally in modern development environments. Former professional athlete in sprint canoeing.",
+    "experiences": [
+      {
+        "id": "1",
+        "dates": "10/2024 – 04/2025, ~0.5 years",
+        "type": "Full Time",
+        "position": "Full-Stack Engineer - Tallinn University of Technology",
+        "bullets": "Delivered fully functional system ready for deployment and testing, Worked in a team environment using CI/CD methodology, setting up Git configurations and managing protected branches, Developed a full-stack web application for managing graduation thesis topics and teams using React (Next.js) for the frontend and Java Spring Boot with PostgreSQL for the backend, Styled the interface according to TalTech's official style guide and integrated TalTech Uni-ID authentication, Integrated Bootstrap components for enhanced UI design, Gained practical experience in REST API development, database design, user authentication, and responsive UI implementation, Utilized toast notifications and Axios for API integration"
+      },
+      {
+        "id": "2",
+        "dates": "01/2023 – 01/2024, ~1 year",
+        "type": "Full Time",
+        "position": "IT System Administrator & Developer - GMS Service",
+        "bullets": "Developed and deployed a fully functional CRM system, improving customer management and business process efficiency, Supported and enhanced the company's internal IT system built with Java, ensuring stability and reliability, Created automation tools and scripts to simplify employees' daily workflows, Managed databases and optimized queries, significantly improving system performance, Integrated external services (invoicing, customer management) with the Java-based system, Assisted staff with technical issues and provided training on digital tools"
+      },
+      {
+        "id": "3",
+        "dates": "06/2022 – 10/2023, ~1.5 years",
+        "type": "Freelance",
+        "position": "Freelance Developer",
+        "bullets": "Created and customized website layouts directly for clients, strengthening both communication and technical delivery skills, Designed and optimized relational database models to improve performance and reliability, Built full-stack applications from scratch, selecting technologies tailored to specific client requirements, Integrated relational and NoSQL databases to ensure fast and efficient data retrieval, Implemented a clean, maintainable OOP codebase, simplifying future development and team onboarding"
+      }
+    ],
+    "education": {
+      "universityName": "Tallinn University of Technology (TalTech)",
+      "universityDate": "2022 – 2025",
+      "universityPara": "Bachelor – IT System Development and Improvement",
+      "masters": {
+        "name": "Tallinn University of Technology (TalTech)",
+        "date": "2025 – …",
+        "program": "Master – Business IT"
+      }
+    },
+    "projects": [
+      {
+        "id": "1",
+        "name": "StrokeSense – Android App for Performance Monitoring in Sprint Canoeing",
+        "description": "Developed a mobile application that collects and visualizes real-time performance data for sprint canoe athletes using smartphone sensors. The app measures and displays key metrics such as boat speed (GPS), stroke rate (accelerometer), and tilt angle (gyroscope).",
+        "technologies": ["Kotlin", "MVVM", "Android SDK", "XML", "GPS", "Accelerometer", "Gyroscope", "Sensors"],
+        "features": ["Real-time data processing", "Graphical charts", "Session recording even with turned-off screen", "Adjustable sensitivity settings"]
+      },
+      {
+        "id": "2",
+        "name": "StrokeMaster – Hybrid App for Technique Training in Sprint Canoeing",
+        "description": "Designed and built the app for both iOS and Android to help sprint canoe athletes improve paddling technique and warm-up strategies.",
+        "technologies": ["Flutter", "Firebase Authentication", "YouTube API", "SharedPreferences/SQL", "XML", "Push Notifications"],
+        "features": ["YouTube API integration for instructional videos", "Firebase Authentication", "Practice session logging and progress tracking", "Push notification system", "Light/Dark theme support"]
+      }
+    ],
+    "languages": ["Java", "Python", "C#", "JavaScript", "TypeScript", "Dart", "PHP"],
+    "mobile": ["Ionic", "Flutter", "Kotlin (Android SDK)", "Firebase", "React Native"],
+    "frontend": ["React", "Next.js", "Vue.js", "Bootstrap", "TailwindCSS", "DaisyUI", "HTML", "CSS", "SCSS", "XML", "Jetpack Compose", "Sass"],
+    "backend": ["Spring Boot", "REST API"],
+    "database": ["PostgreSQL", "SQLite", "MariaDB", "Apache2"],
+    "tools": ["Git", "GitHub", "GitLab", "CI/CD", "Axios"],
+    "spokenLanguages": [
+      {"language": "Russian", "level": "C2"},
+      {"language": "English", "level": "C1"},
+      {"language": "Estonian", "level": "C1"}
+    ]
+  }}

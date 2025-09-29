@@ -6,7 +6,7 @@ import Button from "../Button";
 // Local Data
 import data from "../../data/portfolio.json";
 
-const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
+const Header = ({ handleWorkScroll, handleAboutScroll }) => {
   const router = useRouter();
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
@@ -27,7 +27,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                 onClick={() => router.push("/")}
                 className="font-medium p-2 laptop:p-0 link"
               >
-                {name}.
+                {name}
               </h1>
 
               <div className="flex items-center">
@@ -67,13 +67,10 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                 theme === "dark" ? "bg-slate-800" : "bg-white"
               } shadow-md rounded-md`}
             >
-              {!isBlog ? (
+
                 <div className="grid grid-cols-1">
-                  <Button onClick={handleWorkScroll}>Work</Button>
+                  <Button onClick={handleWorkScroll}>Projects</Button>
                   <Button onClick={handleAboutScroll}>About</Button>
-                  {showBlog && (
-                    <Button onClick={() => router.push("/blog")}>Blog</Button>
-                  )}
                   {showResume && (
                     <Button
                       onClick={() =>
@@ -90,30 +87,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                     Contact
                   </Button>
                 </div>
-              ) : (
-                <div className="grid grid-cols-1">
-                  <Button onClick={() => router.push("/")} classes="first:ml-1">
-                    Home
-                  </Button>
-                  {showBlog && (
-                    <Button onClick={() => router.push("/blog")}>Blog</Button>
-                  )}
-                  {showResume && (
-                    <Button
-                      onClick={() => router.push("/resume")}
-                      classes="first:ml-1"
-                    >
-                      Resume
-                    </Button>
-                  )}
 
-                  <Button
-                    onClick={() => window.open("mailto:hello@chetanverma.com")}
-                  >
-                    Contact
-                  </Button>
-                </div>
-              )}
             </Popover.Panel>
           </>
         )}
@@ -123,19 +97,19 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
           theme === "light" && "bg-white"
         } dark:text-white top-0 z-10 tablet:flex`}
       >
-        <h1
+        <button
           onClick={() => router.push("/")}
-          className="font-medium cursor-pointer mob:p-2 laptop:p-0"
+          className={`font-medium text-lg tablet:text-lg laptop:text-lg laptopl:text-xl rounded-lg
+          transition-all duration-300 ease-out first:ml-0 hover:scale-105 active:scale-100 link ${
+              data.showCursor && "cursor-none"
+          }  `}
         >
-          {name}.
-        </h1>
-        {!isBlog ? (
+          {name + "'s portfolio"}
+        </button>
+
           <div className="flex">
-            <Button onClick={handleWorkScroll}>Work</Button>
+            <Button onClick={handleWorkScroll}>Projects</Button>
             <Button onClick={handleAboutScroll}>About</Button>
-            {showBlog && (
-              <Button onClick={() => router.push("/blog")}>Blog</Button>
-            )}
             {showResume && (
               <Button
                 onClick={() => router.push("/resume")}
@@ -159,37 +133,6 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
               </Button>
             )}
           </div>
-        ) : (
-          <div className="flex">
-            <Button onClick={() => router.push("/")}>Home</Button>
-            {showBlog && (
-              <Button onClick={() => router.push("/blog")}>Blog</Button>
-            )}
-            {showResume && (
-              <Button
-                onClick={() => router.push("/resume")}
-                classes="first:ml-1"
-              >
-                Resume
-              </Button>
-            )}
-
-            <Button onClick={() => window.open("mailto:hello@chetanverma.com")}>
-              Contact
-            </Button>
-
-            {mounted && theme && data.darkMode && (
-              <Button
-                onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-              >
-                <img
-                  className="h-6"
-                  src={`/images/${theme === "dark" ? "moon.svg" : "sun.svg"}`}
-                ></img>
-              </Button>
-            )}
-          </div>
-        )}
       </div>
     </>
   );
