@@ -4,7 +4,7 @@ import Header from "../components/Header";
 import ProjectResume from "../components/ProjectResume";
 import Socials from "../components/Socials";
 import {useTheme} from "next-themes";
-import data, {name, resume, showResume} from "../data/portfolio.json";
+import {name, resume, showResume} from "../data/portfolio.json";
 import SkillSection from "../components/SkillSection";
 
 const Resume = () => {
@@ -22,10 +22,8 @@ const Resume = () => {
     return (
         <>
             <div
-                className={`container mx-auto mb-10 ${
-                    data.showCursor && "cursor-none"
-                }`}
-            >
+                className="container mx-auto mb-10">
+                <div className="gradient-circle"></div>
                 <Header/>
                 {mount && (
                     <div className="mt-10 w-full flex flex-col items-center">

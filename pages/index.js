@@ -2,8 +2,6 @@ import {useRef} from "react";
 import Header from "../components/Header";
 import Socials from "../components/Socials";
 import WorkCard from "../components/WorkCard";
-import {useIsomorphicLayoutEffect} from "../utils";
-import {stagger} from "../animations";
 import Footer from "../components/Footer";
 import Head from "next/head";
 
@@ -36,14 +34,6 @@ export default function Home() {
         });
     };
 
-    useIsomorphicLayoutEffect(() => {
-        stagger(
-            [textOne.current, textTwo.current, textThree.current, textFour.current],
-            {y: 40, x: -10, transform: "scale(0.95) skew(10deg)"},
-            {y: 0, x: 0, transform: "scale(1)"}
-        );
-    }, []);
-
     return (
         <div>
             <Head>
@@ -51,7 +41,7 @@ export default function Home() {
             </Head>
 
             <div className="gradient-circle"></div>
-            <div className="gradient-circle-bottom"></div>
+
 
             <div className="container mx-auto mb-10">
                 <Header
@@ -111,6 +101,7 @@ export default function Home() {
                 </div>
                 <Footer/>
             </div>
+
         </div>
     );
 }
